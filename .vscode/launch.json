@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/backend/app.js",
+            "env": {
+                "BACKEND_PORT": "3000",
+                "MONGO_URI": "mongodb+srv://root:123@cluster0.vksb5.gcp.mongodb.net/test?retryWrites=true&w=majority",
+                "MONGO_DATABASE": "test",
+                "MONGO_COLLECTION_BOOK": "livros",
+                "SENHA_JWT": "senha qualquer",
+                "DURACAO_TOKEN": "3h"
+            },
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
